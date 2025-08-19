@@ -15,6 +15,7 @@ ENV DB_HOST=178.18.250.209
 ENV DB_PORT=3306
 ENV DB_DATABASE=anapec_bdc
 ENV DB_USERNAME=root
+ENV DB_PASSWORD=12345@aA
 RUN composer install --no-dev --optimize-autoloader
 
 EXPOSE 8002
