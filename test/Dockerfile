@@ -17,7 +17,7 @@ ENV DB_DATABASE=anapec_bdc
 ENV DB_USERNAME=root
 RUN composer install --no-dev --optimize-autoloader
 
-EXPOSE 8058
-CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8058"]
+EXPOSE 8002
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8002"]
 
 
