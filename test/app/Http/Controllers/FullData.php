@@ -331,6 +331,10 @@ class FullData extends Controller
             return response('<?xml version="1.0" encoding="UTF-8"?><error><code>400</code><message>Login Wrong</message></error>', 400)
                 ->header('Content-Type', 'application/xml');    
         }
+        if ($pass != $password) {
+            return response('<?xml version="1.0" encoding="UTF-8"?><error><code>400</code><message>Password Wrong</message></error>', 400)
+                ->header('Content-Type', 'application/xml');    
+        }
   
         
     return response()->make('<?xml version="1.0" encoding="UTF-8"?>
